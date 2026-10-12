@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1130.89 595.28">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #f3afcd;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+        font-family: MoiraiOne-Regular, 'Moirai One';
+        font-size: 85.4px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+      }
+
+      .cls-2 {
+        stroke: #c6c6c6;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(63.15 274.41)"><tspan x="0" y="0">C h a r m</tspan></text>
+  <text class="cls-2" transform="translate(492.25 299.35)"><tspan x="0" y="0">o</tspan></text>
+  <text class="cls-1" transform="translate(571.11 302.1) rotate(34.89)"><tspan x="0" y="0">g</tspan></text>
+  <text class="cls-1" transform="translate(660.62 331.66)"><tspan x="0" y="0">r a p h y</tspan></text>
+</svg>

@@ -1,0 +1,9 @@
+{
+  "name": "charmography",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-worker.mjs",
+    "test": "node tests/submissions.mjs && node tests/collect.mjs && node tests/archive.mjs"
+  }
+}

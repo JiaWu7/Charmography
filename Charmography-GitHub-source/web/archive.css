@@ -1,0 +1,88 @@
+.archive-page .nav-button.is-active::after { transform:scaleX(1); }
+.archive-main { width:min(1200px,calc(100% - 96px)); margin:35px auto 0; padding-bottom:35px; }
+.archive-intro { display:flex; align-items:flex-end; justify-content:space-between; gap:30px; }
+.archive-kicker { margin:0 0 14px; color:#aa718e; font-size:9px; letter-spacing:.16em; }
+.archive-intro h1 { margin:0 0 10px; font:400 41px/1.05 Georgia,'Times New Roman',serif; letter-spacing:-.045em; }
+.archive-description { margin:0; font-size:12px; line-height:1.8; color:#967889; }
+.archive-instruction { padding-bottom:3px; text-align:right; font-size:10px; line-height:1.7; color:#967889; }
+.archive-count { font-size:9px; letter-spacing:.15em; color:#aa718e; }
+.archive-instruction p { margin:8px 0 0; }
+.archive-field { position:relative; width:min(1040px,100%); aspect-ratio:1.65; margin:24px auto 32px; }
+.charm-object { position:absolute; top:var(--y); left:var(--x); width:var(--size); padding:0 0 27px; border:0; background:transparent; transform:rotate(var(--tilt)); transform-origin:50% 50%; transition:transform .25s ease; z-index:1; mix-blend-mode:multiply; }
+.charm-object:hover, .charm-object:focus-visible { transform:translateY(-7px) rotate(var(--tilt)) scale(1.035); z-index:3; }
+.charm-object:focus-visible { outline:1px dashed #ba86a0; outline-offset:7px; border-radius:42%; }
+.object-portrait { display:block; width:100%; aspect-ratio:1; overflow:hidden; pointer-events:none; }
+.object-label { position:absolute; bottom:0; left:50%; transform:translateX(-50%) rotate(calc(var(--tilt) * -1)); display:flex; align-items:center; gap:9px; white-space:nowrap; font-size:10px; color:#826371; letter-spacing:.11em; }
+.object-label > span:first-child { color:#aa8395; font-size:9px; }
+.label-slash { color:#cca5b8; }
+.object-open { opacity:0; transition:opacity .2s; font-size:13px; margin-left:2px; }
+.charm-object:hover .object-open, .charm-object:focus-visible .object-open { opacity:1; }
+.archive-bottom { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:22px 0 0; border-top:1px solid #d9b5c54f; color:#9b7e8d; font-size:10px; line-height:1.8; }
+.archive-bottom p { margin:0; }
+.archive-bottom a { color:#886477; text-decoration:none; white-space:nowrap; }
+.archive-bottom a:hover { text-decoration:underline; text-underline-offset:4px; }
+.archive-bottom a span { margin-left:15px; font-size:13px; }
+.archive-fallback { margin-top:30px; font-size:13px; line-height:1.8; }
+.archive-fallback details { padding:18px 0; border-bottom:1px solid var(--line); }
+.archive-fallback summary { cursor:pointer; }
+.record-dialog { width:min(970px,calc(100vw - 56px)); max-height:calc(100svh - 56px); padding:0; border:1px solid #e5cad7; border-radius:19px; background:#fffdf4; overflow:auto; }
+.record-dialog::backdrop { background:#b9849e25; backdrop-filter:blur(6px); }
+.record-dialog .dialog-close { z-index:2; top:13px; right:18px; }
+.record-layout { display:grid; grid-template-columns:.86fr 1.14fr; gap:40px; padding:45px 49px 28px 39px; }
+.record-figure { margin:0; padding:35px 0 0; display:flex; align-items:center; flex-direction:column; }
+.record-owner { align-self:flex-start; margin-left:15px; font-size:10px; letter-spacing:.2em; color:#ae8195; }
+.record-photo { display:block; width:100%; max-height:365px; aspect-ratio:1; margin:21px 0 18px; overflow:hidden; mix-blend-mode:multiply; }
+.record-figure figcaption { max-width:230px; font-size:10px; text-align:center; line-height:1.8; color:#a08593; }
+.record-number { margin:0 0 16px; font-size:9px; letter-spacing:.16em; color:#aa718e; }
+.record-story h2 { margin:0 0 19px; font:400 33px/1.08 Georgia,'Times New Roman',serif; letter-spacing:-.04em; max-width:400px; }
+.record-story blockquote { margin:0 0 25px; font:italic 15px/1.55 Georgia,'Times New Roman',serif; color:#a3798e; }
+.record-story blockquote::before { content:'“'; }
+.record-story blockquote::after { content:'”'; }
+.record-section { margin:0 0 19px; }
+.record-section h3 { display:flex; align-items:baseline; gap:9px; font-size:10px; line-height:1.4; letter-spacing:.05em; font-weight:400; margin:0 0 7px; }
+.record-section h3 span { color:#b495a5; font-size:8px; }
+.record-section p { font-size:12px; color:#826b78; line-height:1.85; margin:0; }
+.record-source { margin:25px 0 0; font-size:9px; line-height:1.8; color:#ae95a1; }
+.record-navigation { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:17px 34px 21px; border-top:1px solid #e8d6de; }
+.record-navigation button { background:transparent; border:0; padding:7px 5px; font-size:11px; color:#8b6d7e; }
+.record-navigation button span { margin:0 6px; }
+.record-navigation button:disabled { opacity:.35; }
+#record-position { font-size:9px; color:#ad8c9e; letter-spacing:.15em; }
+.record-dialog[open] { animation:open-record .2s ease both; }
+@keyframes open-record { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+@media (max-width:1000px) {
+  .archive-main { width:calc(100% - 64px); margin-top:30px; }
+  .record-layout { gap:28px; padding:43px 34px 26px 26px; }
+}
+@media (max-width:700px) {
+  .archive-main { width:calc(100% - 44px); margin-top:25px; }
+  .archive-intro h1 { font-size:36px; }
+  .archive-description { max-width:240px; font-size:11px; }
+  .archive-instruction { font-size:9px; }
+  .archive-field { aspect-ratio:auto; display:grid; grid-template-columns:1fr 1fr; gap:22px 10px; margin:30px auto 32px; }
+  .charm-object { position:relative; top:auto; left:auto; width:100%; padding-bottom:27px; }
+  .object-label { gap:7px; font-size:9px; }
+  .object-open { opacity:.7; }
+  .archive-bottom { align-items:flex-start; font-size:9px; }
+  .archive-bottom p { max-width:190px; }
+  .archive-bottom a { white-space:normal; text-align:right; max-width:125px; }
+  .archive-bottom a span { margin-left:4px; }
+  .record-dialog { width:calc(100vw - 24px); max-height:calc(100svh - 24px); border-radius:15px; }
+  .record-layout { grid-template-columns:1fr; gap:20px; padding:37px 28px 28px; }
+  .record-figure { position:relative; padding-top:0; }
+  .record-owner { margin-left:0; }
+  .record-photo { width:190px; max-height:210px; margin:8px 0 9px; }
+  .record-figure figcaption { font-size:9px; }
+  .record-story h2 { font-size:31px; max-width:none; }
+  .record-section p { font-size:13px; line-height:1.85; }
+  .record-navigation { padding:12px 20px 16px; }
+}
+@media (max-width:360px) {
+  .archive-intro { gap:12px; }
+  .archive-description { max-width:180px; }
+  .record-layout { padding-left:22px; padding-right:22px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .record-dialog[open] { animation:none; }
+  .charm-object:hover, .charm-object:focus-visible { transform:rotate(var(--tilt)); }
+}

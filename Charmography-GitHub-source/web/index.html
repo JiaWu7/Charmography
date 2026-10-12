@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9d9e8">
+  <title>Charmography — Stories held by ordinary objects</title>
+  <meta name="description" content="An interactive Charmography logo. Drag the connecting o to release the letters, and explore how ordinary plush bag charms become irreplaceable companions.">
+  <link rel="icon" href="assets/ring.svg?v=soft-3" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=collect-4">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <a class="wordmark" href="./" aria-label="Charmography home">
+        <svg aria-hidden="true" viewBox="0 0 36 30"><ellipse cx="13" cy="12" rx="9" ry="9"/><ellipse cx="23" cy="18" rx="9" ry="9"/></svg>
+        <span>CHARMOGRAPHY</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-button" type="button" id="about-button" aria-haspopup="dialog" aria-controls="about-dialog">ABOUT</button>
+        <span class="nav-separator" aria-hidden="true">/</span>
+        <a class="nav-button" id="collect-button" href="/collect">COLLECT</a>
+        <span class="nav-separator" aria-hidden="true">/</span>
+        <a class="nav-button" id="archive-button" href="/archive">ARCHIVE</a>
+      </nav>
+    </header>
+
+    <main class="stage" id="stage" aria-label="Interactive Charmography logo">
+      <div class="stage-label"><span class="tiny-dot" aria-hidden="true"></span> A LITTLE CONNECTION</div>
+      <div class="original-logo" id="original-logo" role="img" aria-label="Charmography: pink connected letters held together by a grey o">
+        <img id="logo-image" src="assets/logo.png" alt="" draggable="false" fetchpriority="high">
+      </div>
+      <div class="pieces" id="pieces" aria-hidden="true"></div>
+      <button class="ring-target" id="ring-target" type="button" disabled aria-label="Drag the grey letter o to release the other letters, or press Enter or Space">
+        <img src="assets/ring.svg?v=soft-3" id="ring-image" alt="" draggable="false">
+      </button>
+      <div class="drag-hint" id="drag-hint">
+        <svg class="hint-arrow" aria-hidden="true" viewBox="0 0 70 56"><path d="M63 48C32 50 12 32 12 5M6 12l6-8 7 7"/></svg>
+        <div>Hold the <span class="o-label">o</span>. Give it a little pull.</div>
+        <span class="hint-chinese" lang="zh">按住灰色圆环，拖开连接</span>
+      </div>
+      <div class="release-note" id="release-note" aria-hidden="true"><span class="tiny-dot"></span> THE CONNECTION IS OPEN</div>
+      <div class="floor" aria-hidden="true"></div>
+      <p class="sr-only" role="status" aria-live="polite" id="live-status">The logo is connected. Drag the grey o, or focus it and press Enter, to release the letters.</p>
+      <p class="error-message" id="error-message" hidden lang="zh">互动暂时未能加载，请刷新页面重试。</p>
+    </main>
+
+    <div class="platform-controls">
+      <button class="reset-button" type="button" id="reset-button" disabled><span class="reset-icon" aria-hidden="true">↺</span> Reconnect <span class="zh" lang="zh">复位</span></button>
+    </div>
+
+  </div>
+
+  <dialog id="about-dialog" aria-labelledby="about-title">
+    <button class="dialog-close" id="dialog-close" type="button" aria-label="Close project information">×</button>
+    <span class="dialog-kicker">ABOUT THE PROJECT</span>
+    <h1 id="about-title">Small objects.<br>Personal meaning.</h1>
+    <p>Charmography explores how ordinary plush bag charms gain meaning through relationships, memories and everyday life.</p>
+    <p>The connecting <em>o</em> takes the form of a charm’s ring: a small piece that holds things together. Pull it away and the letters are released.</p>
+    <p class="dialog-chinese" lang="zh">Charmography 关注普通包挂如何在关系、记忆与日常生活中积累意义。首页中的 o 像一个圆环扣：拖开它，连接随之松开，字母便落下。</p>
+    <span class="dialog-footnote">An ongoing graphic design project.</span>
+  </dialog>
+
+  <noscript><p class="no-script">Enable JavaScript to drag the o and release the letters.</p></noscript>
+  <script src="assets/matter.min.js"></script>
+  <script type="module" src="app.mjs?v=soft-3"></script>
+</body>
+</html>

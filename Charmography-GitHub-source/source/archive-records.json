@@ -1,0 +1,56 @@
+[
+  {
+    "id": "tt", "owner": "TT", "title": "A charm that gathers time",
+    "crop": [52, 84, 145, 139], "placement": {"x":8,"y":1,"size":29,"tilt":-9},
+    "photoCaption": "A photographed charm from TT’s collection",
+    "quote": "Buying the same one again wouldn’t feel the same.",
+    "origin": "TT chooses plush toys for their cuteness and the way they suit a bag. From the moment of buying one, TT already imagines it as a possible companion.",
+    "accumulation": "During quiet breaks, TT notices and touches them. A wooden-fish charm can be tapped when stressed. A different Labubu, carried while studying in the UK, holds the memory of that period.",
+    "outcome": "Old or dirty toys are kept in a dedicated tub. A replacement of the same model would not feel the same. TT would buy a friend a new one rather than give away their own."
+  },
+  {
+    "id": "jj", "owner": "JJ", "title": "A companion that sees the world",
+    "crop": [245, 76, 109, 157], "placement": {"x":35,"y":0,"size":28,"tilt":5},
+    "photoCaption": "JJ’s Xiaoye character charm",
+    "quote": "When memories form, when an important moment happens.",
+    "origin": "After noticing a black charm on a stranger’s LV travel bag, JJ explored the character series and chose Xiaoye. It suited JJ’s clothes and bag, and its face reminded them of their boyfriend.",
+    "accumulation": "JJ touches it when nervous or uneasy. It accompanied them on a flight from Jiangbei Airport to Beijing on 28 March 2026 and was there for their 24th birthday. Shared moments turned an accessory into a source of reassurance.",
+    "outcome": "Believing that objects have spirits, JJ wants to protect it and let it see the world. They would still give it to a child who needed it more, hoping the child would remember the kindness of a stranger."
+  },
+  {
+    "id": "xy", "owner": "XY", "title": "A birthday gift that travels",
+    "crop": [406, 64, 137, 166], "placement": {"x":63,"y":3,"size":28,"tilt":9},
+    "photoCaption": "XY’s Jellycat bag charm",
+    "quote": "From the day my friend gave it to me, it was a companion.",
+    "origin": "A close friend gave XY this Jellycat charm for their 22nd birthday. Its meaning began with that relationship: XY saw it as a companion from the day it was given.",
+    "accumulation": "It has travelled on XY’s bag to Shanghai, Hangzhou, Osaka and Kyoto. Touching it while pulling the zip makes it part of an ordinary daily gesture, as well as a travelling companion.",
+    "outcome": "XY would wash and keep it if it became dirty. Even if the friend who gave it wanted one, XY would buy them an identical charm rather than hand over this particular gift. Losing it would be hard to accept."
+  },
+  {
+    "id": "bb", "owner": "BB", "title": "Company on the way to school",
+    "crop": [565, 69, 164, 164], "placement": {"x":9,"y":46,"size":33,"tilt":-7},
+    "photoCaption": "Two charms from BB’s collection",
+    "quote": "Seeing them makes me happy and gives me a sense of security.",
+    "origin": "BB has many charms, most received as gifts. Their characters represent BB’s interests and become part of the way they dress.",
+    "accumulation": "The charms go to school with BB and keep them company while studying. BB seldom reaches them while carrying the bag, but sometimes touches them after putting it down. Seeing them brings happiness and a sense of security.",
+    "outcome": "BB would wash and keep a dirty charm. A gift is something to hold on to; a self-bought charm could be passed on because another could be bought. Losing one would bring sadness, but also anticipation of the replacement a friend has promised."
+  },
+  {
+    "id": "cc", "owner": "CC", "title": "A connection that can be passed on",
+    "crop": [773, 73, 117, 167], "placement": {"x":39,"y":48,"size":28,"tilt":7},
+    "photoCaption": "CC’s photographed plush charm",
+    "quote": "Giving it to the next person could even add to its emotional value.",
+    "origin": "Most of CC’s charms were gifts. A charm makes their bag seem more approachable, invites conversation and helps express an image of themselves.",
+    "accumulation": "CC rarely touches the charms; decoration remains their larger role. Yet time on the bag, wear and the loss of resale value gradually change how the object is understood. Dirt does not remove its emotional value.",
+    "outcome": "CC could accept a loss, with some disappointment. They would also give a charm to another person: its emotional value can move on, and another relationship may add to the connection already held by the object."
+  },
+  {
+    "id": "ss", "owner": "SS", "title": "A room to remember",
+    "crop": [950, 68, 132, 173], "placement": {"x":67,"y":47,"size":29,"tilt":-8},
+    "photoCaption": "Fuyu, currently hanging on SS’s wall",
+    "quote": "The more I looked at it, the more I liked it.",
+    "origin": "During a walk through Chinatown with a flatmate, SS bought a Squidward blind box. They drew Fuyu rather than the figure they had hoped for, but gradually grew fond of it. It was a small comfort during a stressful, rainy period of study in the UK.",
+    "accumulation": "Fuyu currently hangs on the wall, rather than on a bag. It brings life to a room that once felt empty. When work is difficult, SS sometimes squeezes its generous stuffing.",
+    "outcome": "SS says its deeper meaning has not fully formed yet. They plan to take it back to China, where it may recall the exact corner of this room. They would probably keep it, as they have kept their childhood toys."
+  }
+]

@@ -1,0 +1,108 @@
+{
+  "source": {
+    "width": 2048,
+    "height": 1448
+  },
+  "bounds": {
+    "x": 261,
+    "y": 532,
+    "width": 1554,
+    "height": 373
+  },
+  "ring": {
+    "x": 746,
+    "y": 183.5,
+    "width": 132,
+    "height": 132
+  },
+  "glyphs": [
+    {
+      "char": "C",
+      "x": 0,
+      "y": 0,
+      "width": 173,
+      "height": 186,
+      "src": "assets/letter-00.svg"
+    },
+    {
+      "char": "h",
+      "x": 173,
+      "y": 2,
+      "width": 142,
+      "height": 182,
+      "src": "assets/letter-01.svg"
+    },
+    {
+      "char": "a",
+      "x": 315,
+      "y": 60,
+      "width": 134,
+      "height": 126,
+      "src": "assets/letter-02.svg"
+    },
+    {
+      "char": "r",
+      "x": 449,
+      "y": 60,
+      "width": 120,
+      "height": 124,
+      "src": "assets/letter-03.svg"
+    },
+    {
+      "char": "m",
+      "x": 569,
+      "y": 60,
+      "width": 182,
+      "height": 124,
+      "src": "assets/letter-04.svg"
+    },
+    {
+      "char": "g",
+      "x": 711,
+      "y": 166,
+      "width": 173,
+      "height": 179,
+      "src": "assets/letter-05.svg"
+    },
+    {
+      "char": "r",
+      "x": 884,
+      "y": 200,
+      "width": 125,
+      "height": 124,
+      "src": "assets/letter-06.svg"
+    },
+    {
+      "char": "a",
+      "x": 1009,
+      "y": 200,
+      "width": 140,
+      "height": 126,
+      "src": "assets/letter-07.svg"
+    },
+    {
+      "char": "p",
+      "x": 1149,
+      "y": 200,
+      "width": 131,
+      "height": 172,
+      "src": "assets/letter-08.svg"
+    },
+    {
+      "char": "h",
+      "x": 1280,
+      "y": 141,
+      "width": 145,
+      "height": 183,
+      "src": "assets/letter-09.svg"
+    },
+    {
+      "char": "y",
+      "x": 1425,
+      "y": 200,
+      "width": 129,
+      "height": 173,
+      "src": "assets/letter-10.svg"
+    }
+  ]
+}

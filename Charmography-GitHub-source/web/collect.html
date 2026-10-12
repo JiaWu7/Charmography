@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9d9e8">
+  <title>Collect — Charmography</title>
+  <meta name="description" content="Share the story of your plush bag charm, from its origin to the memories and meaning you have shared.">
+  <link rel="icon" href="/assets/ring.svg?v=soft-3" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=collect-4">
+  <link rel="stylesheet" href="/collect.css?v=collect-4">
+</head>
+<body class="collect-page">
+  <header class="header">
+    <a class="wordmark" href="/" aria-label="Charmography home">
+      <svg aria-hidden="true" viewBox="0 0 36 30"><ellipse cx="13" cy="12" rx="9" ry="9"/><ellipse cx="23" cy="18" rx="9" ry="9"/></svg>
+      <span>CHARMOGRAPHY</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="nav-button" type="button" id="about-button" aria-haspopup="dialog" aria-controls="about-dialog">ABOUT</button>
+      <span class="nav-separator" aria-hidden="true">/</span>
+      <a class="nav-button is-active" href="/collect" aria-current="page">COLLECT</a>
+      <span class="nav-separator" aria-hidden="true">/</span>
+      <a class="nav-button" id="archive-button" href="/archive">ARCHIVE</a>
+    </nav>
+  </header>
+
+  <main class="collect-main">
+    <form id="story-form" class="collect-grid" novalidate>
+      <section class="guideline" aria-labelledby="collect-title">
+        <p class="collect-kicker">COLLECT</p>
+        <h1 id="collect-title">Begin with<br>one charm.</h1>
+        <p class="collect-intro">Choose a plush bag charm that matters to you. Start its story with these three questions.</p>
+
+        <div class="question">
+          <span class="question-number" aria-hidden="true">01</span>
+          <div class="question-content">
+            <span class="question-stage">Origin</span>
+            <label for="origin">How did it enter your life?</label>
+            <textarea id="origin" name="origin" rows="3" maxlength="2000" required placeholder="Your answer…"></textarea>
+          </div>
+        </div>
+        <div class="question">
+          <span class="question-number" aria-hidden="true">02</span>
+          <div class="question-content">
+            <span class="question-stage">Accumulation</span>
+            <label for="accumulation">What memories have you shared?</label>
+            <textarea id="accumulation" name="accumulation" rows="3" maxlength="2000" required placeholder="Your answer…"></textarea>
+          </div>
+        </div>
+        <div class="question">
+          <span class="question-number" aria-hidden="true">03</span>
+          <div class="question-content">
+            <span class="question-stage">Outcome</span>
+            <label for="outcome">What makes you want to keep it?</label>
+            <textarea id="outcome" name="outcome" rows="3" maxlength="2000" required placeholder="Your answer…"></textarea>
+          </div>
+        </div>
+        <p class="collect-caption" lang="zh">从一件属于你的包挂开始：它如何来到你身边？你们经历过什么？你为什么想留下它？</p>
+      </section>
+
+      <aside class="photo-side" aria-label="Photo and submission">
+        <input id="photo-input" name="photo" type="file" accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp" hidden>
+        <div class="upload-area" id="upload-area" role="button" tabindex="0" aria-label="Choose or drop a photo of your bag charm" aria-describedby="upload-help">
+          <div class="upload-placeholder" id="upload-placeholder">
+            <svg class="upload-mark" aria-hidden="true" viewBox="0 0 36 30"><ellipse cx="13" cy="12" rx="9" ry="9"/><ellipse cx="23" cy="18" rx="9" ry="9"/></svg>
+            <p>Upload your<br>bag charm</p>
+            <span>Choose a photo or drop it here</span>
+          </div>
+          <img class="photo-preview" id="photo-preview" alt="Preview of your bag charm photo" hidden>
+        </div>
+        <div class="photo-details">
+          <span id="upload-help">JPG, PNG or WebP · up to 10 MB</span>
+          <div class="photo-actions" id="photo-actions" hidden>
+            <button type="button" class="text-button" id="replace-photo">Replace</button>
+            <button type="button" class="text-button" id="remove-photo">Remove</button>
+          </div>
+        </div>
+
+        <p class="save-note">Your story and photo will be saved together as a Charmography.</p>
+        <p class="offline-note" id="offline-note" hidden>This is a preview. <a href="https://charmography.arcanelotus32.chatgpt.site/collect">Open the website to submit your story.</a></p>
+        <div class="submit-row">
+          <button class="submit-button" id="submit-story" type="submit">Save as Your Charmography <span aria-hidden="true">↗</span></button>
+        </div>
+        <div id="form-status" class="form-status" role="status" aria-live="polite" hidden></div>
+        <button id="another-story" class="text-button another-story" type="button" hidden>Share another charm</button>
+      </aside>
+    </form>
+  </main>
+
+  <dialog id="about-dialog" aria-labelledby="about-title">
+    <button class="dialog-close" id="dialog-close" type="button" aria-label="Close project information">×</button>
+    <span class="dialog-kicker">ABOUT THE PROJECT</span>
+    <h1 id="about-title">Small objects.<br>Personal meaning.</h1>
+    <p>Charmography explores how ordinary plush bag charms gain meaning through relationships, memories and everyday life.</p>
+    <p>The connecting <em>o</em> takes the form of a charm’s ring: a small piece that holds things together. Pull it away and the letters are released.</p>
+    <p class="dialog-chinese" lang="zh">Charmography 关注普通包挂如何在关系、记忆与日常生活中积累意义。首页中的 o 像一个圆环扣：拖开它，连接随之松开，字母便落下。</p>
+    <span class="dialog-footnote">An ongoing graphic design project.</span>
+  </dialog>
+  <noscript><p class="no-script">Enable JavaScript to upload a photo and submit your story.</p></noscript>
+  <script type="module" src="/collect.mjs?v=collect-4"></script>
+</body>
+</html>
